@@ -1,0 +1,13 @@
+$molecule
+   0 1
+   Ar
+$end
+
+$rem
+   METHOD                 adc(2)
+   BASIS                  6-31G
+   EE_SINGLETS            [10]
+   POINT_GROUP_SYMMETRY   false
+   N_FROZEN_CORE          0
+   N_FROZEN_VIRTUAL       0
+$end

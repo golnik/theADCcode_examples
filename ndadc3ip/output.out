@@ -1,0 +1,930 @@
+
+Running Job 1 of 1 input.inp
+qchem input.inp_1969109.0 /tmp/tmp.EQqhdlnWqN/local/qchem1969109/ 1
+/software/apps/qchem/6.1/exe/qcprog.exe_s input.inp_1969109.0 /tmp/tmp.EQqhdlnWqN/local/qchem1969109/
+                  Welcome to Q-Chem
+     A Quantum Leap Into The Future Of Chemistry
+
+
+ Q-Chem 6.1, Q-Chem, Inc., Pleasanton, CA (2022)
+
+ E. Epifanovsky,  A. T. B. Gilbert,  Xintian Feng,  Joonho Lee,  Yuezhi Mao,  
+ N. Mardirossian,  P. Pokhilko,  A. White,  M. Wormit,  M. P. Coons,  
+ A. L. Dempwolff,  Zhengting Gan,  D. Hait,  P. R. Horn,  L. D. Jacobson,  
+ I. Kaliman,  J. Kussmann,  A. W. Lange,  Ka Un Lao,  D. S. Levine,  Jie Liu,  
+ S. C. McKenzie,  A. F. Morrison,  K. D. Nanda,  F. Plasser,  D. R. Rehn,  
+ M. L. Vidal,  Zhi-Qiang You,  Ying Zhu,  B. Alam,  B. Albrecht,  
+ A. Aldossary,  E. Alguire,  J. H. Andersen,  V. Athavale,  D. Barton,  
+ K. Begam,  A. Behn,  N. Bellonzi,  Y. A. Bernard,  E. J. Berquist,  
+ H. Burton,  A. Carreras,  K. Carter-Fenk,  Mathew Chow,  Romit Chakraborty,  
+ Chandrima Chakravarty,  Junhan Chen,  A. D. Chien,  K. D. Closser,  
+ V. Cofer-Shabica,  L. Cunha,  S. Dasgupta,  Jia Deng,  M. de Wergifosse,  
+ M. Diedenhofen,  Hainam Do,  S. Ehlert,  Po-Tung Fang,  S. Fatehi,  
+ Qingguo Feng,  T. Friedhoff,  Thomas Froitzheim,  B. Ganoe,  J. Gayvert,  
+ Qinghui Ge,  G. Gidofalvi,  M. Gimferrer,  M. Goldey,  Montgomery Gray,  
+ J. Gomes,  C. Gonzalez-Espinoza,  S. Gulania,  A. Gunina,  J. A. Gyamfi,  
+ M. W. D. Hanson-Heine,  P. H. P. Harbach,  A. W. Hauser,  M. F. Herbst,  
+ M. Hernandez Vera,  M. Hodecker,  Z. C. Holden,  S. Houck,  Xunkun Huang,  
+ Kerwin Hui,  B. C. Huynh,  K. Ikeda,  M. Ivanov,  Hyunjun Ji,  Zuxin Jin,  
+ Hanjie Jiang,  Subrata Jana,  B. Kaduk,  S. Kaehler,  R. Kang,  
+ K. Khistyaev,  Jaehoon Kim,  Yongbin Kim,  P. Klunzinger,  Z. Koczor-Benda,  
+ Joong Hoon Koh,  D. Kosenkov,  Saikiran Kotaru,  L. Koulias,  T. Kowalczyk,  
+ C. M. Krauter,  K. Kue,  A. Kunitsa,  T. Kus,  A. Landau,  K. V. Lawler,  
+ D. Lefrancois,  S. Lehtola,  Rain Li,  Shaozhi Li,  Yi-Pei Li,  
+ Jiashu Liang,  M. Liebenthal,  Hung-Hsuan Lin,  You-Sheng Lin,  Fenglai Liu,  
+ Kuan-Yu Liu,  Xiao Liu,  M. Loipersberger,  A. Luenser,  C. Malbon,  
+ A. Manjanath,  P. Manohar,  E. Mansoor,  S. F. Manzer,  Shan-Ping Mao,  
+ A. V. Marenich,  T. Markovich,  S. Mason,  F. Matz,  S. A. Maurer,  
+ P. F. McLaughlin,  M. F. S. J. Menger,  J.-M. Mewes,  S. A. Mewes,  
+ P. Morgante,  Mohammad Mostafanejad,  J. W. Mullinax,  K. J. Oosterbaan,  
+ G. Paran,  V. Parravicini,  Alexander C. Paul,  Suranjan K. Paul,  
+ F. Pavosevic,  Zheng Pei,  S. Prager,  E. I. Proynov,  E. Ramos,  B. Rana,  
+ A. E. Rask,  A. Rettig,  R. M. Richard,  F. Rob,  E. Rossomme,  T. Scheele,  
+ M. Scheurer,  M. Schneider,  P. E. Schneider,  Tim K. Schramm,  N. Sergueev,  
+ S. M. Sharada,  M. Sharma,  Hengyuan Shen,  W. Skomorowski,  D. W. Small,  
+ C. J. Stein,  Alistair J. Sterling,  Yingli Su,  Yu-Chuan Su,  
+ E. J. Sundstrom,  J. Talbot,  Zhen Tao,  J. Thirman,  Hung-Yi Tsai,  
+ T. Tsuchimochi,  N. M. Tubman,  C. Utku,  S. P. Veccham,  O. Vydrov,  
+ J. Wenzel,  Jonathan Wong,  J. Witte,  A. Yamada,  Chou-Hsun Yang,  Kun Yao,  
+ S. Yeganeh,  S. R. Yost,  A. Zech,  F. Zeller,  Igor Ying Zhang,  
+ Xing Zhang,  Yu Zhang,  D. Zuev,  A. Aspuru-Guzik,  A. T. Bell,  
+ N. A. Besley,  K. B. Bravaya,  B. R. Brooks,  D. Casanova,  Jeng-Da Chai,  
+ Hsing-Ta Chen,  S. Coriani,  C. J. Cramer,  A. E. DePrince, III,  
+ R. A. DiStasio Jr.,  A. Dreuw,  B. D. Dunietz,  T. R. Furlani,  
+ W. A. Goddard III,  S. Grimme,  S. Hammes-Schiffer,  T. Head-Gordon,  
+ W. J. Hehre,  Chao-Ping Hsu,  T.-C. Jagau,  Yousung Jung,  A. Klamt,  
+ Jing Kong,  D. S. Lambrecht,  Xiangyuan Li,  WanZhen Liang,  N. J. Mayhall,  
+ C. W. McCurdy,  J. B. Neaton,  T. Neudecker,  C. Ochsenfeld,  
+ J. A. Parkhill,  R. Peverati,  V. A. Rassolov,  Haisheng Ren,  Yihan Shao,  
+ L. V. Slipchenko,  R. P. Steele,  J. E. Subotnik,  A. J. W. Thom,  
+ A. Tkatchenko,  D. G. Truhlar,  T. Van Voorhis,  Fan Wang,  
+ T. A. Wesolowski,  K. B. Whaley,  H. L. Woodcock III,  P. M. Zimmerman,  
+ S. Faraji,  P. M. W. Gill,  M. Head-Gordon,  J. M. Herbert,  A. I. Krylov
+
+ Contributors to earlier versions of Q-Chem not listed above: 
+ R. D. Adamson,  B. Austin,  R. Baer,  J. Baker,  G. J. O. Beran,  
+ K. Brandhorst,  S. T. Brown,  E. F. C. Byrd,  Arup K. Chakraborty,  
+ G. K. L. Chan,  Chun-Min Chang,  Yunqing Chen,  C.-L. Cheng,  
+ Siu Hung Chien,  D. M. Chipman,  D. L. Crittenden,  H. Dachsel,  
+ R. J. Doerksen,  A. D. Dutoi,  R. G. Edgar,  J. Fosso-Tande,  
+ L. Fusti-Molnar,  D. Ghosh,  A. Ghysels,  A. Golubeva-Zadorozhnaya,  
+ J. Gonthier,  M. S. Gordon,  S. R. Gwaltney,  G. Hawkins,  J. E. Herr,  
+ A. Heyden,  S. Hirata,  E. G. Hohenstein,  G. Kedziora,  F. J. Keil,  
+ C. Kelley,  Jihan Kim,  R. A. King,  R. Z. Khaliullin,  P. P. Korambath,  
+ W. Kurlancheek,  A. Laurent,  A. M. Lee,  M. S. Lee,  S. V. Levchenko,  
+ Ching Yeh Lin,  D. Liotard,  E. Livshits,  R. C. Lochan,  I. Lotan,  
+ L. A. Martinez-Martinez,  P. E. Maslen,  N. Nair,  D. P. O'Neill,  
+ D. Neuhauser,  E. Neuscamman,  C. M. Oana,  R. Olivares-Amaya,  R. Olson,  
+ T. M. Perrine,  B. Peters,  P. A. Pieniazek,  A. Prociuk,  Y. M. Rhee,  
+ J. Ritchie,  M. A. Rohrdanz,  E. Rosta,  N. J. Russ,  H. F. Schaefer III,  
+ M. W. Schmidt,  N. E. Schultz,  S. Sharma,  N. Shenvi,  C. D. Sherrill,  
+ A. C. Simmonett,  A. Sodt,  T. Stein,  D. Stuck,  K. S. Thanthiriwatte,  
+ V. Vanovschi,  L. Vogt,  Tao Wang,  A. Warshel,  M. A. Watson,  
+ C. F. Williams,  Q. Wu,  X. Xu,  Jun Yang,  W. Zhang,  Yan Zhao
+
+   Please cite Q-Chem as follows:
+  "Software for the frontiers of quantum chemistry:
+   An overview of developments in the Q-Chem 5 package"
+   J. Chem. Phys. 155, 084801 (2021)
+   https://doi.org/10.1063/5.0055522 (open access)
+
+ Q-Chem 6.1.0 for Intel X86 EM64T Linux
+
+ Parts of Q-Chem use Armadillo 9.900.5 (Nocturnal Misbehaviour).
+ http://arma.sourceforge.net/
+
+ Q-Chem begins on Sat Apr 12 13:45:46 2025  
+
+ Host: 
+0
+
+     Scratch files written to /tmp/tmp.EQqhdlnWqN/local/qchem1969109//
+ Jul923 |scratch|qcdevops|jenkins|workspace|build_RNUM 8720   
+ Processing $rem in /software/apps/qchem/6.1/config/preferences:
+ Processing $rem in /home/ngolubev/.qchemrc:
+
+ Checking the input file for inconsistencies... 	...done.
+
+--------------------------------------------------------------
+User input:
+--------------------------------------------------------------
+$molecule
+0 1
+C 0.0 0.0 0.0
+O 0.0 0.0 1.128
+$end
+
+$rem
+METHOD                 adc(3)
+BASIS                  6-311G
+IP_STATES              [5,5,5,5]
+POINT_GROUP_SYMMETRY   true
+N_FROZEN_CORE          0
+N_FROZEN_VIRTUAL       0
+ADC_DENSITY_ORDER      4
+$end
+--------------------------------------------------------------
+ ----------------------------------------------------------------
+             Standard Nuclear Orientation (Angstroms)
+    I     Atom           X                Y                Z
+ ----------------------------------------------------------------
+    1      C       0.0000000000     0.0000000000    -0.6445714286
+    2      O       0.0000000000     0.0000000000     0.4834285714
+ ----------------------------------------------------------------
+ Molecular Point Group                 C2v   NOp =  4
+ Largest Abelian Subgroup              C2v   NOp =  4
+ Nuclear Repulsion Energy =          22.51817918 hartrees
+ There are        7 alpha and        7 beta electrons
+ Requested basis set is 6-311G
+ There are 8 shells and 26 basis functions
+ Total memory of 16000 MB is distributed as follows: 
+   MEM_STATIC is set to 192 MB
+   QALLOC/CCMAN JOB total memory use is  15808 MB
+ Warning: actual memory use might exceed 16000 MB
+
+ Total QAlloc Memory Limit  16000 MB
+ Mega-Array Size       188 MB
+ MEM_STATIC part       192 MB
+
+
+                       Distance Matrix (Angstroms)
+             C (  1)
+   O (  2)  1.128000
+ 
+ A cutoff of  1.0D-12 yielded     36 shell pairs
+ There are       387 function pairs
+ Smallest overlap matrix eigenvalue = 2.21E-02
+
+ Scale SEOQF with 1.000000e+00/1.000000e+00/1.000000e+00
+
+ Standard Electronic Orientation quadrupole field applied
+ Nucleus-field energy     =    -0.0000000047 hartrees
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ SAD guess density has 14.000000 electrons
+ A restricted Hartree-Fock SCF calculation will be
+ performed using Pulay DIIS extrapolation
+ SCF converges when DIIS error is below 1.0E-08
+ ---------------------------------------
+  Cycle       Energy         DIIS Error
+ ---------------------------------------
+    1    -112.8538283640      1.73E-01
+    2    -112.6614470750      2.20E-02
+    3    -112.6747258089      2.03E-02
+    4    -112.6992389205      1.49E-03
+    5    -112.6994362649      3.06E-04
+    6    -112.6994474410      4.67E-05
+    7    -112.6994477019      1.09E-05
+    8    -112.6994477180      2.80E-06
+    9    -112.6994477189      2.14E-07
+   10    -112.6994477189      1.95E-08
+   11    -112.6994477189      1.98E-09 Convergence criterion met
+ ---------------------------------------
+ SCF time:  CPU 0.03 s  wall 0.10 s
+ SCF   energy in the final basis set = -112.69944772
+ Total energy in the final basis set = -112.69944772
+================================================================================
+|                                                                              |
+|                                 A D C  M A N                                 |
+|                                                                              |
+ ------------------------------------------------------------------------------ 
+|                                                                              |
+| Components:                                                                  |
+|                                                                              |
+| - libvmm - 1.3-trunk                                                         |
+|   Authors:                                                                   |
+|   Evgeny Epifanovsky, Ilya Kaliman                                           |
+|                                                                              |
+| - libtensor - 2.5-trunk                                                      |
+|   Authors:                                                                   |
+|   Evgeny Epifanovsky, Michael Wormit, Dmitry Zuev, Sam Manzer,               |
+|   Ilya Kaliman                                                               |
+|                                                                              |
+| - libwfa - 1.1-trunk                                                         |
+|   Authors:                                                                   |
+|   Felix Plasser, Stefanie Mewes (Baeppler), Benjamin Thomitzni,              |
+|   Michael Wormit, Feng Chen, Anna I. Krylov, Pavel Pokhilko                  |
+|                                                                              |
+| - libadc - 1.1-trunk                                                         |
+|   Authors:                                                                   |
+|   Michael Wormit, Adrian L. Dempwolff, Philipp H. P. Harbach,                |
+|   Caroline Krauter, Dirk Rehn, Matthias Schneider, Jan Wenzel                |
+|                                                                              |
+| - adcman - 2.6-trunk                                                         |
+|   Authors:                                                                   |
+|   Michael Wormit, Adrian L. Dempwolff, Philipp H. P. Harbach,                |
+|   Caroline Krauter, Daniel Lefrancois, Jan-Michael Mewes, Dirk Rehn,         |
+|   Matthias Schneider, Jan Wenzel, Andreas Dreuw                              |
+|                                                                              |
+| Authors of earlier versions of ADCMAN:                                       |
+| Andreas Dreuw, Jan Hendrik Starcke, Dirk Rehn, Michael Wormit                |
+|                                                                              |
+================================================================================
+
+ 
+ Alpha MOs, Restricted
+ -- Occupied --                  
+-20.684 -11.392  -1.564  -0.800  -0.646  -0.646  -0.557
+  1 A1    2 A1    3 A1    4 A1    1 B1    1 B2    5 A1                         
+ -- Virtual --                   
+  0.131   0.131   0.348   0.563   0.563   0.596   0.868   1.044
+  2 B1    2 B2    6 A1    3 B1    3 B2    7 A1    8 A1    4 B1                 
+  1.044   1.073   1.583   2.906   2.906   3.002   5.267   5.267
+  4 B2    9 A1   10 A1    5 B1    5 B2   11 A1    6 B1    6 B2                 
+  5.418  24.335  51.388
+ 12 A1   13 A1   14 A1                                                         
+ 
+ Beta MOs, Restricted
+ -- Occupied --                  
+-20.684 -11.392  -1.564  -0.800  -0.646  -0.646  -0.557
+  1 A1    2 A1    3 A1    4 A1    1 B1    1 B2    5 A1                         
+ -- Virtual --                   
+  0.131   0.131   0.348   0.563   0.563   0.596   0.868   1.044
+  2 B1    2 B2    6 A1    3 B1    3 B2    7 A1    8 A1    4 B1                 
+  1.044   1.073   1.583   2.906   2.906   3.002   5.267   5.267
+  4 B2    9 A1   10 A1    5 B1    5 B2   11 A1    6 B1    6 B2                 
+  5.418  24.335  51.388
+ 12 A1   13 A1   14 A1                                                         
+
+--------------------------------------------------------------------------------
+                                   HF Summary                                   
+--------------------------------------------------------------------------------
+  Energy:                                                 -112.6994477189 a.u.
+  Dip. moment [a.u.]:                  [  -0.000000,    0.000000,   -0.195674]
+  Total dipole [Debye]:                                               0.497355
+  <r^2> [a.u.]:                        [   7.541138,    7.541138,   25.269647]
+  Total <r^2> [a.u.]:                                                40.351924
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                                 MP(2) Summary                                  
+--------------------------------------------------------------------------------
+  MP energy contribution:                                   -0.2597509400 a.u.
+  Total energy:                                           -112.9591986589 a.u.
+  Dip. moment [a.u.]:                  [  -0.000000,    0.000000,    0.202603]
+  Total dipole [Debye]:                                               0.514967
+  <r^2> [a.u.]:                        [   7.594334,    7.594334,   25.309375]
+  Total <r^2> [a.u.]:                                                40.498043
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                                 MP(3) Summary                                  
+--------------------------------------------------------------------------------
+  MP energy contribution:                                    0.0181241278 a.u.
+  Total energy:                                           -112.9410745311 a.u.
+--------------------------------------------------------------------------------
+  Starting Davidson for ionized states of irrep A1 ... 
+--------------------------------------------------------------------------------
+   It NVec Conv  Avg. Norm  Max. Norm  Conv. states           Remark
+--------------------------------------------------------------------------------
+         5    0  4.897e-01  1.902e+00  0.5729 n n n n n       Guess.
+    1   10    0  2.189e-01  7.396e-01  0.4997 n n n n n       
+    2   15    0  1.077e-01  3.197e-01  0.4949 n n n n n       
+    3   20    0  8.789e-02  3.299e-01  0.4943 n n n n n       
+    4   25    0  2.690e-02  1.227e-01  0.4943 n n n n n       
+    5   10    0  1.502e-02  6.692e-02  0.4943 n n n n n       Subspace collapsed.
+    6   15    0  6.594e-03  2.472e-02  0.4943 n n n n n       
+    7   20    0  3.697e-03  1.561e-02  0.4943 n n n n n       
+    8   25    0  1.286e-03  6.003e-03  0.4943 n n n n n       
+    9   10    1  7.169e-04  3.490e-03  0.4943 y n n n n       Subspace collapsed.
+   10   15    2  5.027e-02  2.514e-01  0.4943 y y n n n       
+   11   20    2  1.648e-02  8.240e-02  0.4943 y y n n n       
+   12   25    3  3.663e-03  1.832e-02  0.4943 y y n y n       
+   13   10    3  1.466e-01  7.328e-01  0.4943 y y n y n       Subspace collapsed.
+   14   15    3  1.968e-02  9.831e-02  0.4943 y y n y n       
+   15   20    3  5.141e-03  2.569e-02  0.4943 y y n y n       
+   16   25    3  1.062e-03  5.308e-03  0.4943 y y n y n       
+   17   10    3  3.070e-04  1.534e-03  0.4943 y y n y n       Subspace collapsed.
+   18   14    3  8.959e-05  4.477e-04  0.4943 y y n y n       
+   19   18    3  2.408e-05  1.203e-04  0.4943 y y n y n       
+   20   22    4  6.550e-06  3.274e-05  0.4943 y y y y n       
+   21   25    4  2.737e-06  1.368e-05  0.4943 y y y y n       
+   22    8    4  1.047e-06  5.235e-06  0.4943 y y y y n       Subspace collapsed.
+   23   11    4  4.601e-07  2.300e-06  0.4943 y y y y n       
+   24   14    5  1.721e-07  8.602e-07  0.4943 y y y y y       Converged.
+--------------------------------------------------------------------------------
+  Davidson Summary: 
+ ------------------------------------------------------------
+  State  0: ionization energy =   0.4943 a.u.   (converged)
+  State  1: ionization energy =   0.7244 a.u.   (converged)
+  State  2: ionization energy =   0.8052 a.u.   (converged)
+  State  3: ionization energy =   0.8437 a.u.   (converged)
+  State  4: ionization energy =   0.8984 a.u.   (converged)
+ ------------------------------------------------------------
+
+Less hole guess vectors found than requested: 0 (found), 5 (requested).
+Adjusting number of particle-2hole guess vectors to 5.
+  Starting Davidson for ionized states of irrep A2 ... 
+--------------------------------------------------------------------------------
+   It NVec Conv  Avg. Norm  Max. Norm  Conv. states           Remark
+--------------------------------------------------------------------------------
+         5    0  1.103e-01  2.825e-01  0.8823 n n n n n       Guess.
+    1   10    0  3.579e-02  1.067e-01  0.8017 n n n n n       
+    2   15    0  1.577e-02  7.440e-02  0.7978 n n n n n       
+    3   20    0  1.852e-02  9.245e-02  0.7977 n n n n n       
+    4   25    0  1.055e-02  5.275e-02  0.7977 n n n n n       
+    5   10    0  5.631e-03  2.815e-02  0.7977 n n n n n       Subspace collapsed.
+    6   15    0  4.574e-03  2.287e-02  0.7977 n n n n n       
+    7   20    0  3.363e-03  1.682e-02  0.7977 n n n n n       
+    8   25    4  2.136e-03  1.068e-02  0.7977 y y y y n       
+    9   10    4  5.522e-04  2.761e-03  0.7977 y y y y n       Subspace collapsed.
+   10   15    4  4.582e-04  2.291e-03  0.7977 y y y y n       
+   11   20    4  3.014e-04  1.507e-03  0.7977 y y y y n       
+   12   25    4  2.110e-04  1.055e-03  0.7977 y y y y n       
+   13   10    4  1.424e-04  7.121e-04  0.7977 y y y y n       Subspace collapsed.
+   14   15    4  1.235e-04  6.175e-04  0.7977 y y y y n       
+   15   20    4  1.180e-04  5.899e-04  0.7977 y y y y n       
+   16   23    4  1.169e-04  5.845e-04  0.7977 y y y y n       
+   17   24    4  1.233e-04  6.163e-04  0.7977 y y y y n       
+   18   25    4  6.868e-05  3.434e-04  0.7977 y y y y n       
+   19    6    4  3.534e-05  1.767e-04  0.7977 y y y y n       Subspace collapsed.
+   20    7    4  3.010e-05  1.505e-04  0.7977 y y y y n       
+   21    8    4  1.674e-05  8.368e-05  0.7977 y y y y n       
+   22    9    4  1.149e-05  5.745e-05  0.7977 y y y y n       
+   23   10    4  9.646e-06  4.823e-05  0.7977 y y y y n       
+   24   11    4  1.076e-05  5.381e-05  0.7977 y y y y n       
+   25   12    4  4.258e-06  2.129e-05  0.7977 y y y y n       
+   26   13    4  2.549e-06  1.274e-05  0.7977 y y y y n       
+   27   14    4  2.382e-06  1.191e-05  0.7977 y y y y n       
+   28   15    4  9.326e-07  4.663e-06  0.7977 y y y y n       
+   29   16    4  2.566e-07  1.283e-06  0.7977 y y y y n       
+   30   17    5  6.007e-08  3.003e-07  0.7977 y y y y y       Converged.
+--------------------------------------------------------------------------------
+  Davidson Summary: 
+ ------------------------------------------------------------
+  State  0: ionization energy =   0.7977 a.u.   (converged)
+  State  1: ionization energy =   0.8052 a.u.   (converged)
+  State  2: ionization energy =   0.8984 a.u.   (converged)
+  State  3: ionization energy =   0.9198 a.u.   (converged)
+  State  4: ionization energy =   1.2685 a.u.   (converged)
+ ------------------------------------------------------------
+
+Less hole guess vectors found than requested: 1 (found), 5 (requested).
+Adjusting number of particle-2hole guess vectors to 4.
+  Starting Davidson for ionized states of irrep B1 ... 
+--------------------------------------------------------------------------------
+   It NVec Conv  Avg. Norm  Max. Norm  Conv. states           Remark
+--------------------------------------------------------------------------------
+         5    0  1.340e-01  3.502e-01  0.6696 n n n n n       Guess.
+    1   10    0  5.078e-02  1.690e-01  0.6208 n n n n n       
+    2   15    0  6.925e-02  3.251e-01  0.6197 n n n n n       
+    3   20    0  2.659e-02  1.114e-01  0.6197 n n n n n       
+    4   25    0  8.476e-03  2.789e-02  0.6197 n n n n n       
+    5   10    0  9.294e-03  3.185e-02  0.6197 n n n n n       Subspace collapsed.
+    6   15    0  3.239e-02  1.162e-01  0.6197 n n n n n       
+    7   20    0  1.145e-02  5.299e-02  0.6197 n n n n n       
+    8   25    0  2.881e-03  1.320e-02  0.6197 n n n n n       
+    9   10    1  1.803e-03  8.088e-03  0.6197 y n n n n       Subspace collapsed.
+   10   15    1  6.878e-04  2.984e-03  0.6197 y n n n n       
+   11   20    2  2.371e-04  9.891e-04  0.6197 y y n n n       
+   12   25    2  5.104e-05  2.034e-04  0.6197 y y n n n       
+   13   10    2  1.547e-05  6.342e-05  0.6197 y y n n n       Subspace collapsed.
+   14   15    2  6.768e-06  3.197e-05  0.6197 y y n n n       
+   15   20    2  2.186e-06  9.153e-06  0.6197 y y n n n       
+   16   25    2  7.980e-07  2.708e-06  0.6197 y y n n n       
+   17   10    3  3.821e-07  1.343e-06  0.6197 y y n y n       Subspace collapsed.
+   18   15    5  1.927e-07  7.153e-07  0.6197 y y y y y       Converged.
+--------------------------------------------------------------------------------
+  Davidson Summary: 
+ ------------------------------------------------------------
+  State  0: ionization energy =   0.6197 a.u.   (converged)
+  State  1: ionization energy =   0.8322 a.u.   (converged)
+  State  2: ionization energy =   1.0272 a.u.   (converged)
+  State  3: ionization energy =   1.0520 a.u.   (converged)
+  State  4: ionization energy =   1.0588 a.u.   (converged)
+ ------------------------------------------------------------
+
+Less hole guess vectors found than requested: 1 (found), 5 (requested).
+Adjusting number of particle-2hole guess vectors to 4.
+  Starting Davidson for ionized states of irrep B2 ... 
+--------------------------------------------------------------------------------
+   It NVec Conv  Avg. Norm  Max. Norm  Conv. states           Remark
+--------------------------------------------------------------------------------
+         5    0  1.386e-01  3.871e-01  0.6739 n n n n n       Guess.
+    1   10    0  5.553e-02  1.969e-01  0.6210 n n n n n       
+    2   15    0  4.526e-02  1.994e-01  0.6197 n n n n n       
+    3   20    0  2.271e-02  1.050e-01  0.6197 n n n n n       
+    4   25    1  6.490e-03  2.460e-02  0.6197 n n n n y       
+    5   10    1  8.154e-03  2.955e-02  0.6197 n n n n y       Subspace collapsed.
+    6   15    0  2.561e-02  1.127e-01  0.6197 n n n n n       
+    7   20    0  7.663e-03  3.596e-02  0.6197 n n n n n       
+    8   25    0  2.649e-03  1.231e-02  0.6197 n n n n n       
+    9   10    1  1.147e-03  5.297e-03  0.6197 y n n n n       Subspace collapsed.
+   10   15    1  5.112e-04  2.316e-03  0.6197 y n n n n       
+   11   20    2  1.445e-04  6.472e-04  0.6197 y y n n n       
+   12   25    2  4.131e-05  1.841e-04  0.6197 y y n n n       
+   13   10    2  1.402e-05  6.232e-05  0.6197 y y n n n       Subspace collapsed.
+   14   15    2  4.246e-06  1.860e-05  0.6197 y y n n n       
+   15   20    2  1.472e-06  6.368e-06  0.6197 y y n n n       
+   16   25    3  4.878e-07  2.087e-06  0.6197 y y n y n       
+   17   10    5  2.124e-07  8.938e-07  0.6197 y y y y y       Converged.
+--------------------------------------------------------------------------------
+  Davidson Summary: 
+ ------------------------------------------------------------
+  State  0: ionization energy =   0.6197 a.u.   (converged)
+  State  1: ionization energy =   0.8322 a.u.   (converged)
+  State  2: ionization energy =   1.0272 a.u.   (converged)
+  State  3: ionization energy =   1.0520 a.u.   (converged)
+  State  4: ionization energy =   1.0588 a.u.   (converged)
+ ------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+                             Ionized State Summary
+--------------------------------------------------------------------------------
+
+  Ionized state  1 (A1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  1 (2) A1                                    R^2 =  3.20843e-13
+
+  Total energy:                                           -112.4467907226 a.u.
+  Ionization energy:                                              13.450146 eV
+
+  Pole strength:                                                      0.898098
+
+
+  V1^2 = 0.9122, V2^2 = 0.0878
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     5 (A1) B                            -0.9544
+     5 (A1) A   5 (A1) B    7 (A1) A      0.0852
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  2 (B1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  1 (2) B1                                    R^2 =  1.42764e-12
+
+  Total energy:                                           -112.3213768197 a.u.
+  Ionization energy:                                              16.862832 eV
+
+  Pole strength:                                                      0.912100
+
+
+  V1^2 = 0.9287, V2^2 = 0.0713
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     1 (B1) B                            -0.9637
+     1 (B1) A   1 (B1) B    2 (B1) A      0.0915
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  3 (B2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  1 (2) B2                                    R^2 =  1.71465e-12
+
+  Total energy:                                           -112.3213768196 a.u.
+  Ionization energy:                                              16.862832 eV
+
+  Pole strength:                                                      0.912100
+
+
+  V1^2 = 0.9287, V2^2 = 0.0713
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     1 (B2) B                             0.9637
+     1 (B2) A   1 (B2) B    2 (B2) A     -0.0915
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  4 (A1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  2 (2) A1                                    R^2 =  4.94953e-13
+
+  Total energy:                                           -112.2166691618 a.u.
+  Ionization energy:                                              19.712073 eV
+
+  Pole strength:                                                      0.823908
+
+
+  V1^2 = 0.8314, V2^2 = 0.1686
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     4 (A1) B                             0.9070
+     5 (A1) A   1 (B2) B    2 (B2) A     -0.1195
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  5 (A2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  1 (2) A2                                    R^2 =  4.50085e-13
+
+  Total energy:                                           -112.1434045751 a.u.
+  Ionization energy:                                              21.705703 eV
+
+  Pole strength:                                                      0.000000
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     1 (B1) A   5 (A1) B    2 (B2) A     -0.3765
+     1 (B2) A   5 (A1) B    2 (B1) A      0.3765
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  6 (A2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  2 (2) A2                                    R^2 =  5.25331e-13
+
+  Total energy:                                           -112.1358407481 a.u.
+  Ionization energy:                                              21.911526 eV
+
+  Pole strength:                                                      0.000000
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     1 (B2) A   5 (A1) B    2 (B1) A      0.3783
+     1 (B1) A   5 (A1) B    2 (B2) A      0.3783
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  7 (A1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  3 (2) A1                                    R^2 =  1.04125e-08
+
+  Total energy:                                           -112.1358407481 a.u.
+  Ionization energy:                                              21.911526 eV
+
+  Pole strength:                                                      0.000000
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     1 (B1) A   5 (A1) B    2 (B1) A      0.3783
+     1 (B2) A   5 (A1) B    2 (B2) A     -0.3783
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  8 (B2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  2 (2) B2                                    R^2 =  1.45088e-10
+
+  Total energy:                                           -112.1088449493 a.u.
+  Ionization energy:                                              22.646119 eV
+
+  Pole strength:                                                      0.004686
+
+
+  V1^2 = 0.0041, V2^2 = 0.9959
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     5 (A1) A   5 (A1) B    2 (B2) A      0.5386
+     4 (A1) A   5 (A1) B    2 (B2) A      0.2953
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state  9 (B1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  2 (2) B1                                    R^2 =  1.16698e-11
+
+  Total energy:                                           -112.1088449492 a.u.
+  Ionization energy:                                              22.646119 eV
+
+  Pole strength:                                                      0.004686
+
+
+  V1^2 = 0.0041, V2^2 = 0.9959
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     5 (A1) A   5 (A1) B    2 (B1) A     -0.5386
+     4 (A1) A   5 (A1) B    2 (B1) A     -0.2953
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 10 (A1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  4 (2) A1                                    R^2 =  1.18035e-12
+
+  Total energy:                                           -112.0973717076 a.u.
+  Ionization energy:                                              22.958321 eV
+
+  Pole strength:                                                      0.130066
+
+
+  V1^2 = 0.1314, V2^2 = 0.8686
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     5 (A1) A   1 (B2) B    2 (B2) A      0.3533
+     5 (A1) A   1 (B1) B    2 (B1) A      0.3533
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 11 (A2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  3 (2) A2                                    R^2 =  5.41610e-13
+
+  Total energy:                                           -112.0426911383 a.u.
+  Ionization energy:                                              24.446255 eV
+
+  Pole strength:                                                      0.000000
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     5 (A1) B   1 (B1) B    2 (B2) B     -0.3494
+     5 (A1) B   1 (B2) B    2 (B1) B     -0.3494
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 12 (A1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  5 (2) A1                                    R^2 =  8.60202e-07
+
+  Total energy:                                           -112.0426911383 a.u.
+  Ionization energy:                                              24.446255 eV
+
+  Pole strength:                                                      0.000000
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     5 (A1) B   1 (B1) B    2 (B1) B     -0.3494
+     5 (A1) B   1 (B2) B    2 (B2) B      0.3494
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 13 (A2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  4 (2) A2                                    R^2 =  1.17193e-12
+
+  Total energy:                                           -112.0213225018 a.u.
+  Ionization energy:                                              25.027726 eV
+
+  Pole strength:                                                      0.000000
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     5 (A1) A   1 (B2) B    2 (B1) A      0.3562
+     5 (A1) A   1 (B1) B    2 (B2) A     -0.3562
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 14 (B2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  3 (2) B2                                    R^2 =  8.93808e-07
+
+  Total energy:                                           -111.9138856882 a.u.
+  Ionization energy:                                              27.951230 eV
+
+  Pole strength:                                                      0.000051
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     4 (A1) B   5 (A1) B    2 (B2) B      0.5348
+     5 (A1) A   4 (A1) B    2 (B2) A     -0.3563
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 15 (B1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  3 (2) B1                                    R^2 =  5.55253e-07
+
+  Total energy:                                           -111.9138856880 a.u.
+  Ionization energy:                                              27.951230 eV
+
+  Pole strength:                                                      0.000051
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     4 (A1) B   5 (A1) B    2 (B1) B     -0.5348
+     5 (A1) A   4 (A1) B    2 (B1) A      0.3563
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 16 (B1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  4 (2) B1                                    R^2 =  3.29103e-07
+
+  Total energy:                                           -111.8890362686 a.u.
+  Ionization energy:                                              28.627417 eV
+
+  Pole strength:                                                      0.010779
+
+
+  V1^2 = 0.0107, V2^2 = 0.9893
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     1 (B1) A   1 (B2) B    2 (B2) A     -0.3373
+     1 (B1) B   1 (B2) B    2 (B2) B     -0.3213
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 17 (B2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  4 (2) B2                                    R^2 =  2.93024e-07
+
+  Total energy:                                           -111.8890362685 a.u.
+  Ionization energy:                                              28.627417 eV
+
+  Pole strength:                                                      0.010779
+
+
+  V1^2 = 0.0107, V2^2 = 0.9893
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     1 (B2) A   1 (B1) B    2 (B1) A      0.3373
+     1 (B1) B   1 (B2) B    2 (B1) B     -0.3212
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 18 (B2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  5 (2) B2                                    R^2 =  4.92655e-07
+
+  Total energy:                                           -111.8822830227 a.u.
+  Ionization energy:                                              28.811182 eV
+
+  Pole strength:                                                      0.006675
+
+
+  V1^2 = 0.0021, V2^2 = 0.9979
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     4 (A1) A   5 (A1) B    2 (B2) A      0.3319
+     5 (A1) A   4 (A1) B    2 (B2) A      0.2897
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 19 (B1)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  5 (2) B1                                    R^2 =  7.15253e-07
+
+  Total energy:                                           -111.8822830227 a.u.
+  Ionization energy:                                              28.811182 eV
+
+  Pole strength:                                                      0.006675
+
+
+  V1^2 = 0.0021, V2^2 = 0.9979
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     4 (A1) A   5 (A1) B    2 (B1) A      0.3319
+     5 (A1) A   4 (A1) B    2 (B1) A      0.2897
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+  Ionized state 20 (A2)                                            [converged]
+  ----------------------------------------------------------------------------
+  Term symbol:  5 (2) A2                                    R^2 =  3.00326e-07
+
+  Total energy:                                           -111.6726150456 a.u.
+  Ionization energy:                                              34.516538 eV
+
+  Pole strength:                                                      0.000000
+
+
+  V1^2 = 0.0000, V2^2 = 1.0000
+
+  Important amplitudes:
+      occ i      occ j       vir a          v   
+    ---------------------------------------------
+     4 (A1) B   1 (B2) B    2 (B1) B     -0.3405
+     4 (A1) B   1 (B1) B    2 (B2) B      0.3405
+    ---------------------------------------------
+  ----------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------
+  Time of ADC calculation:  CPU 6.04 s  wall 5.96 s
+================================================================================
+ 
+ --------------------------------------------------------------
+             Orbital Energies (a.u.) and Symmetries
+ --------------------------------------------------------------
+ 
+ Alpha MOs, Restricted
+ -- Occupied --                  
+-20.684 -11.392  -1.564  -0.800  -0.646  -0.646  -0.557
+  1 A1    2 A1    3 A1    4 A1    1 B1    1 B2    5 A1                         
+ -- Virtual --                   
+  0.131   0.131   0.348   0.563   0.563   0.596   0.868   1.044
+  2 B1    2 B2    6 A1    3 B1    3 B2    7 A1    8 A1    4 B1                 
+  1.044   1.073   1.583   2.906   2.906   3.002   5.267   5.267
+  4 B2    9 A1   10 A1    5 B1    5 B2   11 A1    6 B1    6 B2                 
+  5.418  24.335  51.388
+ 12 A1   13 A1   14 A1                                                         
+ 
+ Beta MOs, Restricted
+ -- Occupied --                  
+-20.684 -11.392  -1.564  -0.800  -0.646  -0.646  -0.557
+  1 A1    2 A1    3 A1    4 A1    1 B1    1 B2    5 A1                         
+ -- Virtual --                   
+  0.131   0.131   0.348   0.563   0.563   0.596   0.868   1.044
+  2 B1    2 B2    6 A1    3 B1    3 B2    7 A1    8 A1    4 B1                 
+  1.044   1.073   1.583   2.906   2.906   3.002   5.267   5.267
+  4 B2    9 A1   10 A1    5 B1    5 B2   11 A1    6 B1    6 B2                 
+  5.418  24.335  51.388
+ 12 A1   13 A1   14 A1                                                         
+ --------------------------------------------------------------
+ 
+          Ground-State Mulliken Net Atomic Charges
+
+     Atom                 Charge (a.u.)
+  ----------------------------------------
+      1 C                     0.331054
+      2 O                    -0.331054
+  ----------------------------------------
+  Sum of atomic charges =     0.000000
+
+ -----------------------------------------------------------------
+                    Cartesian Multipole Moments
+ -----------------------------------------------------------------
+    Charge (ESU x 10^10)
+                 0.0000
+    Dipole Moment (Debye)
+         X      -0.0000      Y       0.0000      Z      -0.4974
+       Tot       0.4974
+    Quadrupole Moments (Debye-Ang)
+        XX     -10.1431     XY       0.0000     YY     -10.1431
+        XZ      -0.0000     YZ       0.0000     ZZ     -13.0348
+    Octopole Moments (Debye-Ang^2)
+       XXX      -0.0000    XXY       0.0000    XYY      -0.0000
+       YYY       0.0000    XXZ       0.9715    XYZ      -0.0000
+       YYZ       0.9715    XZZ       0.0000    YZZ      -0.0000
+       ZZZ       5.9332
+    Hexadecapole Moments (Debye-Ang^3)
+      XXXX      -8.5546   XXXY       0.0000   XXYY      -2.8515
+      XYYY       0.0000   YYYY      -8.5546   XXXZ      -0.0000
+      XXYZ       0.0000   XYYZ      -0.0000   YYYZ       0.0000
+      XXZZ      -6.9603   XYZZ       0.0000   YYZZ      -6.9603
+      XZZZ      -0.0000   YZZZ       0.0000   ZZZZ     -36.5594
+ -----------------------------------------------------------------
+ Total job time:  10.27s(wall), 10.20s(cpu) 
+ Sat Apr 12 13:45:57 2025
+
+        *************************************************************
+        *                                                           *
+        *  Thank you very much for using Q-Chem.  Have a nice day.  *
+        *                                                           *
+        *************************************************************
+
+
