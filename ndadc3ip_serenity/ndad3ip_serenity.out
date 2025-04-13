@@ -1,0 +1,1214 @@
+Loading mkl/2024.0
+  Loading requirement: tbb/2021.11 compiler-rt/2024.0.2
+#begin<serenity>
+
+#==============================================================================#
+#                                                                              #
+#   SSSSS                                                    #########         #
+#   SS    EEEE RRR  EEEE N   N II TTTTTT YY  YY          ####################  #
+#   SS    E    R  R E    NN  N II   TT    YYYY        ######################## #
+#   SSSSS EEEE RRR  EEEE N N N II   TT     YY      #########             ##### #
+#      SS E    R R  E    N  NN II   TT     YY   #######       OOOOOOOO         #
+#      SS EEEE R  R EEEE N   N II   TT     YY ########      OOOOOOOOOOOO       #
+#   SSSSS                                  ########        OOOOOOOOOOOOOO      #
+#                                     ###########   OOO    OOOOOOOOOOOOOO      #
+# #########                   ###############      OOOOO   OOOOOOOOOOOOOO      #
+# ######################################      OO   OOOOO    OOOOOOOOOOOO       #
+#       #########################         O   OO    OOO       OOOOOOOO         #
+#                                                                              #
+#                                                                              #
+#                                   Serenity                                   #
+#                                                                              #
+#                           A quantum chemistry code                           #
+#                developed in the group of Johannes Neugebauer                 #
+#                        at the University of Münster.                         #
+#                                                                              #
+#==============================================================================#
+
+  Program Info:
+ ---------------
+    Version           :   1.6.1
+    Git Branch        :   data_saver
+    Serenity Home     :   /home/ngolubev/software/serenity/
+
+  Citations:
+ ------------
+    First publication :
+  J. P. Unsleber, T. Dresselhaus, K. Klahr, D. Schnieders, M. Böckers, D. Barton
+  and J. Neugebauer, Serenity: A Subsystem Quantum Chemistry Program,
+  J. Comput. Chem., 39, 788-798, (2018).
+
+    Update paper      :
+  N. Niemeyer, P. Eschenbach, M. Bensberg, J. Toelle, L. Hellmann, L. Lampe,
+  A. Massolle, A. Rikus, D. Schnieders, J. P. Unsleber, and J. Neugebauer,
+  The subsystem quantum chemistry program Serenity,
+  Wiley Interdiscip. Rev. Comput. Mol. Sci., 13, e1647, (2023).
+
+    Libint (2.7.0-b6) :
+  Libint: A library for the evaluation of molecular integrals of many-body operators
+  over Gaussian functions, v2.7.0-beta6  Edward F. Valeev, http://libint.valeyev.net/ .
+
+    Libxc (6.1.0)     :
+  S. Lehtola, C. Steigemann, M. J.T. Oliveira, and M. A.L. Marques.,  SoftwareX 7, 1–5 (2018)
+  10.1016/j.softx.2017.11.002
+
+    XCFun (v2.0.2)    :
+  Ekström, U. (2020). XCFun: A library of exchange-correlation functionals with
+  arbitrary-order derivatives. Zenodo. https://doi.org/10.5281/zenodo.3946698
+
+    Libecpint (1.0.7) :
+  R. A. Shaw, J. G. Hill, J. Chem. Phys. 147, 074108 (2017); doi: 10.1063/1.4986887
+
+  Program started:
+ ------------------
+    Time              :   2025-04-12 17:20:14
+    By                :   ngolubev
+    On                :   ltamp03
+
+    Threads           :   24
+    Memory Limit      :   47875 MB
+
+          ------------------------------------------------------------          
+                                System molecule                                 
+          ------------------------------------------------------------          
+
+     Charge:                              0
+     Spin:                                0
+     Method:                             HF
+     Basis Set:                      6-311G
+  Current Geometry (Angstrom):
+ ------------------------------
+        1  O   +0.0000000000   +0.0000000000   +0.1177900000
+        2  H   +0.0000000000   +0.7554500000   -0.4711600000
+        3  H   +0.0000000000   -0.7554500000   -0.4711600000
+
+
+
+          ------------------------------------------------------------          
+                                Main SCF Options                                
+          ------------------------------------------------------------          
+
+     SCF Mode:                   RESTRICTED
+     Method:                             HF
+     Basis Set:                      6-311G
+     Basis Functions:                    19
+     Caching Threshold:                  -1
+     Integral Threshold:            1.0e-10
+
+     Energy Threshold:              5.0e-08
+     RMSD[D] Threshold:             1.0e-08
+     DIIS Threshold:                5.0e-07
+     Initial Guess:                 ATOMSCF
+
+     Density Fitting:
+       Coulomb                         NONE
+       Exchange                        NONE
+
+          ------------------------------------------------------------          
+                                      SCF                                       
+          ------------------------------------------------------------          
+
+    Cycle      E/a.u.         abs(dE)/a.u.     rmsd(P)/a.u.       [F,P]/a.u.      time/min   Mode
+       1   -76.0054623889              inf              inf         7.35e-02      0:00 
+       2   -76.0058121765         3.50e-04         3.69e-03         8.49e-02      0:00:001    D-L
+       3   -76.0077801808         1.97e-03         1.59e-03         5.53e-02      0:00:001    D-L
+       4   -76.0088021617         1.02e-03         1.32e-03         2.86e-02      0:00:001    -DL
+       5   -76.0092048563         4.03e-04         1.76e-03         3.68e-03      0:00:005    -DL
+       6   -76.0092140141         9.16e-06         3.36e-04         2.46e-04      0:00:001    -DL
+       7   -76.0092141291         1.15e-07         3.82e-05         2.45e-05      0:00:001    -D-
+       8   -76.0092141303         1.17e-09         4.25e-06         4.41e-06      0:00:001    -D-
+       9   -76.0092141304         1.09e-10         8.85e-07         1.14e-06      0:00:000    -D-
+      10   -76.0092141305         1.08e-10         2.67e-07         1.14e-07      0:00:021    -D-
+    Converged after  10 cycles. Loop exited.
+
+
+          ------------------------------------------------------------          
+                               Final SCF Results                                
+          ------------------------------------------------------------          
+
+Energy components as stored:
+Nuclear Repulsion:                                                                     9.1892221251 
+One-Particle Energy (including ECPs):                                               -123.0121743747 
+Two-Particle Energy (HF):                                                             37.8137381191 
+PCM Solvation Energy:                                                                  0.0000000000 
+----------------------------------------------------------------------------------------------------
+Derived energy components:
+Total Energy (HF):                                                                   -76.0092141305 
+----------------------------------------------------------------------------------------------------
+    
+  Orbital Energies:
+ -------------------
+        #    Occ.      Hartree                eV   
+       ---  ------    ---------            --------
+         1   2.00  -20.5535723994     -559.2911926496
+         2   2.00   -1.3589452024      -36.9787824821
+         3   2.00   -0.7108412183      -19.3429747910
+         4   2.00   -0.5646434877      -15.3647319081
+         5   2.00   -0.5043467485      -13.7239740615
+         6   0.00   +0.1409639608       +3.8358247516
+         7   0.00   +0.2133199181       +5.8047306372
+         8   0.00   +0.5571857395      +15.1617962419
+         9   0.00   +0.5984621219      +16.2849838177
+        10   0.00   +0.9999796608      +27.2108325633
+        11   0.00   +1.0256557100      +27.9095134484
+        12   0.00   +1.1511005503      +31.3230414227
+        13   0.00   +1.4354153448      +39.0596410475
+        14   0.00   +2.4653686891      +67.0860990814
+        15   0.00   +2.4978104726      +67.9688849740
+        16   0.00   +5.3053886175     +144.3669776564
+        17   0.00   +5.4237824935     +147.5886391197
+        18   0.00   +5.5440120858     +150.8602529666
+        19   0.00  +51.4295910740    +1399.4704555665
+    
+  Additional Analysis:
+ ----------------------
+
+   -<V>/<T> = 1.999 
+      <S*S> = 0.000 
+    S*(S+1) = 0.000 
+          C = 0.000 
+
+
+o------------------------------------------------------------------------------o
+|                                Running Tasks                                 |
+o------------------------------------------------------------------------------o
+
+ o-------------o
+ | Task No. 1: |
+ o-------------o
+
+
+          ------------------------------------------------------------          
+                                Main SCF Options                                
+          ------------------------------------------------------------          
+
+     SCF Mode:                   RESTRICTED
+     Method:                             HF
+     Basis Set:                      6-311G
+     Basis Functions:                    19
+     Caching Threshold:                  -1
+     Integral Threshold:            1.0e-10
+
+     Energy Threshold:              5.0e-08
+     RMSD[D] Threshold:             1.0e-08
+     DIIS Threshold:                5.0e-07
+
+     Density Fitting:
+       Coulomb                         NONE
+       Exchange                        NONE
+
+          ------------------------------------------------------------          
+                                      SCF                                       
+          ------------------------------------------------------------          
+
+    Cycle      E/a.u.         abs(dE)/a.u.     rmsd(P)/a.u.       [F,P]/a.u.      time/min   Mode
+       1   -76.0092141304              inf              inf         4.73e-09      0:00 
+       2   -76.0092141302         1.67e-10         1.54e-10         3.31e-09      0:00:000    DD-
+       3   -76.0092141301         1.16e-10         1.08e-10         2.32e-09      0:00:000    -D-
+    Converged after   3 cycles. Loop exited.
+
+
+          ------------------------------------------------------------          
+                               Final SCF Results                                
+          ------------------------------------------------------------          
+
+Energy components as stored:
+Nuclear Repulsion:                                                                     9.1892221251 
+One-Particle Energy (including ECPs):                                               -123.0121743808 
+Two-Particle Energy (HF):                                                             37.8137381256 
+PCM Solvation Energy:                                                                  0.0000000000 
+----------------------------------------------------------------------------------------------------
+Derived energy components:
+Total Energy (HF):                                                                   -76.0092141301 
+----------------------------------------------------------------------------------------------------
+    
+  Orbital Energies:
+ -------------------
+        #    Occ.      Hartree                eV   
+       ---  ------    ---------            --------
+         1   2.00  -20.5535724011     -559.2911926952
+         2   2.00   -1.3589452051      -36.9787825552
+         3   2.00   -0.7108412173      -19.3429747639
+         4   2.00   -0.5646434933      -15.3647320589
+         5   2.00   -0.5043467481      -13.7239740494
+         6   0.00   +0.1409639612       +3.8358247629
+         7   0.00   +0.2133199186       +5.8047306511
+         8   0.00   +0.5571857384      +15.1617962132
+         9   0.00   +0.5984621221      +16.2849838225
+        10   0.00   +0.9999796665      +27.2108327185
+        11   0.00   +1.0256557083      +27.9095134018
+        12   0.00   +1.1511005524      +31.3230414793
+        13   0.00   +1.4354153451      +39.0596410533
+        14   0.00   +2.4653686895      +67.0860990927
+        15   0.00   +2.4978104733      +67.9688849949
+        16   0.00   +5.3053886182     +144.3669776769
+        17   0.00   +5.4237824927     +147.5886390980
+        18   0.00   +5.5440120865     +150.8602529845
+        19   0.00  +51.4295910720    +1399.4704555122
+    
+  Additional Analysis:
+ ----------------------
+
+   -<V>/<T> = 1.999 
+      <S*S> = 0.000 
+    S*(S+1) = 0.000 
+          C = 0.000 
+
+    Time taken for task 1: 0.413046817 s.
+    
+ o-------------o
+ | Task No. 2: |
+ o-------------o
+
+
+          ------------------------------------------------------------          
+                          Saving SCF data to hdf5 file                          
+          ------------------------------------------------------------          
+
+  This module will save orbital energies, coefficients, and molecular integrals to hdf5 file.
+
+  Writing data to file data.hdf5
+
+  Saving orbital energies...
+  Saving orbital occupations...
+  Saving orbital symmetries...
+  Saving orbital coefficients...
+  Saving integrals...
+  Saving AO basis...
+  Saving overlap matrix...
+  Saving dipole matrices...
+  dip_x
+  dip_y
+  dip_z
+  Saving geometry...
+  Saving attributes...
+
+
+  Total energy: -76.0092
+  Active orbitals: 1...19
+  Number of active orbitals: 19
+  Number of occupied orbitals: 5
+  Number of non-zero integrals: 19285
+
+  Done!
+
+    Time taken for task 2: 0.440599362 s.
+    
+
+o------------------------------------------------------------------------------o
+|                                   Cleanup                                    |
+o------------------------------------------------------------------------------o
+
+    All clean and shiny
+
+  Final Timings:
+ ----------------
+              Active System -         HF Pot.      0:01.236 min
+              Active System -     1e-Int Pot.      0:00.006 min
+              Active System -   Coul./XC Pot.      0:01.236 min
+               Tech. -           DIIS/Damping      0:00.001 min
+               Tech. -    Fock Matrix Solving      0:00.001 min
+               Tech. - Libint Initializations      0:01.221 min
+
+  Program ended:
+ ----------------
+    Time:  2025-04-12 17:20:16
+    On:    ltamp03
+    Time taken for the entire run: 2.113770829 s.
+    
+
+#end<serenity>
+#begin<theADCcode>
+  TheADCcode: A collection of ADC/ISR source codes.
+  Contributors: Nikolay Golubev,
+                Yasen Velkov (developer of the original version),
+                Alexander Kuleff,
+                Anthony Dutoi, Nicolas Sisourat, Tsveta Miteva,
+                Joerg Breidbach, Imke Mueller, Nayana Vaval,
+                Francesco Tarantelli, Soeren Kopelke,
+                Sajeev Yesodharan, Kirill Gokhberg, Robin Santra
+
+  I will read data from data.hdf5 file.
+  Reading data structure integrals...
+  Reading data structure indices...
+  Reading attribute nActOrbs...
+  Reading attribute nOccOrb...
+  Reading attribute nSym...
+  Reading attribute nCenters...
+  Reading attribute nIntegrals...
+  Reading data structure irreps...
+  Reading attribute energy...
+  Reading data structure energies...
+  Reading data structure occs...
+  SCF data obtained from HDF5.
+  m.o.	sym	energy(a.u.)
+  -----------------------------
+  1	1	-20.5536
+  2	1	-1.35895
+  3	1	-0.710841
+  4	1	-0.564643
+  5	1	-0.504347
+  6	1	0.140964
+  7	1	0.21332
+  8	1	0.557186
+  9	1	0.598462
+  10	1	0.99998
+  11	1	1.02566
+  12	1	1.1511
+  13	1	1.43542
+  14	1	2.46537
+  15	1	2.49781
+  16	1	5.30539
+  17	1	5.42378
+  18	1	5.54401
+  19	1	51.4296
+
+ Integral table loaded:
+ type (OO|OO) integrals: 145 of 120 found.
+ type (OV|OO) integrals: 1260 of 1050 found.
+ type (OV|OV) integrals: 2940 of 2485 found.
+ type (VV|OO) integrals: 1575 of 1575 found.
+ type (VV|OV) integrals: 7350 of 7350 found.
+ type (VV|VV) integrals: 6033 of 5565 found.
+
+ Input summary:
+ Third-order Non-Dyson ADC propagator for ionization potentials
+              Symmetries: 1
+                   Spins: 2
+ Static self-energy / density matrix:
+                   Order: infinite
+                  IDIAGL: 1
+
+                   Tasks: Diagonalization:  Full (LAPACK)
+  Reading attribute energy...
+  Reading data structure energies...
+  Reading attribute nActOrbs...
+  Reading attribute nBasisFunc...
+  Reading data structure coefficients...
+ Number of loaded molecular integrals: 19285
+
+ Computing spectrum for symmetry 1, spin 2
+ Number of ISR configurations: 355
+ Full diagonalizing:
+
+ ----------------------------------------------------
+ VORSICHT: gepatchte Version!!!    JB(9/2001)
+   Gibt 2p1h-Matrix auch aus, falls in dieser
+   Symmetrie kein besetztes Orbital.
+
+   STOKOP muss(!) .true. sein !!!
+ ----------------------------------------------------
+
+ -----------------------------------------------------------------------------------------------------------------------------
+
+
+  I N P U T                                                                                                            (INPUT)
+ -----------------------------------------------------------------------------------------------------------------------------
+
+  NAMELIST /INPUT/ :
+
+  ICHECK  =       -1    MAXINT  =    18145   NBUF    =     1000
+  MAXDIM  =      980   NROOP   =      200    MAXFUN  =       19   IDIAGL  =        1
+  MAXSTA  =    10000   LUNG    = 10000000    MAXORB  =       19   MAXIT   =       30
+  MAXSYM  =        1
+
+  NAMELIST /NOSTAN/ :
+
+  AKRIT   = 0.100E-08       IORDER  =         3        IAB3    =         F
+  ECUT    = 0.000E+00       ISYM    =         0        IDYSN   =         F
+  ESHFT   = 0.000E+00       IREADQ  =         0        STOKOP  =         F
+  DEGEN   = 0.500E-03
+
+
+
+ -----------------------------------------------------------------------------------------------------------------------------
+                              SYMMETRY ANALYSIS DONE
+ -----------------------------------------------------------------------------------------------------------------------------
+
+
+
+     NO. OF GTOS           19
+     NO. OF SCF VECTORS    19
+
+
+
+ ISYM  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1
+
+
+
+
+
+ NO. OF ACTIVE ORBITALS (TRAN4 NUMBERING):
+
+
+
+           1           2           3           4           5           6           7           8           9          10          11          12          13          14          15          16          17          18          19
+
+
+
+
+
+
+
+
+
+
+
+                              BESETZTE ORBITALE   
+
+
+                                1.          1 A         -20.553572 AU    ENTSPRECHEND    -559.2957 EV
+
+                                2.          2 A          -1.358945 AU    ENTSPRECHEND     -36.9791 EV
+
+                                3.          3 A          -0.710841 AU    ENTSPRECHEND     -19.3431 EV
+
+                                4.          4 A          -0.564643 AU    ENTSPRECHEND     -15.3649 EV
+
+                                5.          5 A          -0.504347 AU    ENTSPRECHEND     -13.7241 EV
+
+
+
+
+                              VIRTUELLE ORBITALE  
+
+
+                                1.          6 A           0.140964 AU    ENTSPRECHEND       3.8359 EV
+
+                                2.          7 A           0.213320 AU    ENTSPRECHEND       5.8048 EV
+
+                                3.          8 A           0.557186 AU    ENTSPRECHEND      15.1619 EV
+
+                                4.          9 A           0.598462 AU    ENTSPRECHEND      16.2851 EV
+
+                                5.         10 A           0.999980 AU    ENTSPRECHEND      27.2111 EV
+
+                                6.         11 A           1.025656 AU    ENTSPRECHEND      27.9097 EV
+
+                                7.         12 A           1.151101 AU    ENTSPRECHEND      31.3233 EV
+
+                                8.         13 A           1.435415 AU    ENTSPRECHEND      39.0600 EV
+
+                                9.         14 A           2.465369 AU    ENTSPRECHEND      67.0866 EV
+
+                               10.         15 A           2.497810 AU    ENTSPRECHEND      67.9694 EV
+
+                               11.         16 A           5.305389 AU    ENTSPRECHEND     144.3681 EV
+
+                               12.         17 A           5.423782 AU    ENTSPRECHEND     147.5898 EV
+
+                               13.         18 A           5.544012 AU    ENTSPRECHEND     150.8615 EV
+
+                               14.         19 A          51.429591 AU    ENTSPRECHEND    1399.4818 EV
+
+
+
+
+
+ ENTARTUNG DER BASIS:
+
+ SYMMETRIE:                                               A  
+
+ ENTARTETE SYMMETRIE:                                     A  
+
+
+
+
+ ZU BERECHNENDE SYMMETRIEN:                               A  
+
+ ENTARTUNGSGRAD:                                          1.0
+
+
+
+
+ IN DER DYSON - GLEICHUNG WERDEN FOLGENDE ORBITALE BERUECKSICHTIGT:
+
+
+  1 A      2 A      3 A      4 A      5 A      6 A      7 A      8 A      9 A     10 A     11 A     12 A     13 A     14 A  
+ 15 A     16 A     17 A     18 A     19 A  
+1
+ ************************************************************************************************************************************
+
+
+
+ ANGABEN ZUR ART DER RECHNUNG:
+
+
+
+ ORDNUNG DES ADC - SCHEMAS:                          3.                                (IORDER .EQ.  3)
+
+ KEINE ENERGIESELEKTION MOEGLICH
+
+ NUR HF-BASIS ERLAUBT
+
+ METHODE ZUR BERECHNUNG DER KONSTANTEN DIAGRAMME:    "MATRIX-INVERSION"                   (IDIAGL .EQ.  1)
+
+ KRITERIUM FUER DIE ENTARTUNG:                       DEGEN     =  5.0E-04 EV
+
+
+
+
+ ************************************************************************************************************************************
+
+
+
+ PARAMETER ZUR KONTROLLE DER EINGABEDATEN:
+
+
+
+ MAXIMALE ANZAHL VON FUNKTIONEN PRO SYMMETRIE:          MAXFUN =      19
+
+ LAENGE DES RIJKL-FELDES (SINGLE W):                    MAXINT =   18145
+
+ MAXIMALE DIMENSION:                                    MAXDIM =     980
+
+ ANZAHL DER ZU BERECHNENDEN SYMMETRIEN:                 MAXSYM =       1
+
+ MAXIMALE ANZAHL VON ZUSTAENDEN:                        MAXSTA =   10000
+
+ MAXIMALE ANZAHL VON ORBITALEN:                         MAXORB =      19
+
+ SYMMETRIE:                                             A  
+
+
+ ANZAHL VON FUNKTIONEN PRO SYMMETRIE:                   19
+
+
+ ANZAHL DER BESETZTEN ORBITALE PRO SYMMETRIE:            5
+
+
+ ANZAHL DER UNBESETZTEN ORBITALE PRO SYMMETRIE:         14
+
+
+
+
+ ************************************************************************************************************************************
+
+ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   ALLE ENERGIEN IN EV   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ ************************************************************************************************************************************
+1
+ @@@@@@@@@@@@@@@@@
+ ENDZUSTAND:    A  
+ @@@@@@@@@@@@@@@@@
+
+
+
+
+ ANZAHL DER   2H-1P   KONFIGURATIONEN :       350
+
+
+ ANZAHL DER   2P-1H   KONFIGURATIONEN :       980
+1
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+                                                       ENDZUSTAND:    A  
+
+
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+ 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 2H1P 
+
+
+
+
+
+ ZEIT FUER DEN AUFRUF VON "AB3":   ******** SEK.
+
+
+
+ LAENGE DES BUFFERS  NBUF =           1000
+
+ ANZAHL DER BLOECKE  MAXBL =            11
+
+
+
+ DIMENSION DER MATRIX :                            350
+
+ MAXIMALE ANZAHL DER OFF-DIAGONALELEMENTE :      61425
+ ANZAHL DER OFF-DIAGONALELEMENTE :               10608
+ BESETZUNG DER MATRIX IN PROZENT :               17.27
+1
+ ************************************************************************************************************************************
+
+
+
+
+                                     I  N   N  V   V  EEEEE  RRRRR  SSSSS  I  OOOOO  N   N
+                                     I  NN  N  V   V  E      R   R  S      I  O   O  NN  N
+                                     I  N N N  V   V  EEE    RRRRR   SSS   I  O   O  N N N
+                                     I  N  NN   V V   E      R  R       S  I  O   O  N  NN
+                                     I  N   N    V    EEEEE  R   R  SSSSS  I  OOOOO  N   N
+
+
+
+
+ ************************************************************************************************************************************
+
+
+
+ CONVERGENCY CRITERIUM FOR VECTORS IN THE INVERSION:  1.E-09
+ MAXIMUM NUMBER OF ITERATIONS IN THE INVERSION:           30
+
+
+
+
+
+ KONVERGENZ FUER K =   6
+
+
+    1. ITERATION:     DELTA =  0.0004647374
+    2. ITERATION:     DELTA =  0.0000111875
+    3. ITERATION:     DELTA =  0.0000002782
+    4. ITERATION:     DELTA =  0.0000000084
+    5. ITERATION:     DELTA =  0.0000000002
+
+
+
+ KONVERGENZ FUER K =   7
+
+
+    1. ITERATION:     DELTA =  0.0005627652
+    2. ITERATION:     DELTA =  0.0000155916
+    3. ITERATION:     DELTA =  0.0000004721
+    4. ITERATION:     DELTA =  0.0000000151
+    5. ITERATION:     DELTA =  0.0000000005
+
+
+
+ KONVERGENZ FUER K =   8
+
+
+    1. ITERATION:     DELTA =  0.0004557721
+    2. ITERATION:     DELTA =  0.0000105496
+    3. ITERATION:     DELTA =  0.0000002551
+    4. ITERATION:     DELTA =  0.0000000072
+    5. ITERATION:     DELTA =  0.0000000002
+
+
+
+ KONVERGENZ FUER K =   9
+
+
+    1. ITERATION:     DELTA =  0.0004612602
+    2. ITERATION:     DELTA =  0.0000099777
+    3. ITERATION:     DELTA =  0.0000002473
+    4. ITERATION:     DELTA =  0.0000000080
+    5. ITERATION:     DELTA =  0.0000000003
+
+
+
+ KONVERGENZ FUER K =  10
+
+
+    1. ITERATION:     DELTA =  0.0010081701
+    2. ITERATION:     DELTA =  0.0000120020
+    3. ITERATION:     DELTA =  0.0000002436
+    4. ITERATION:     DELTA =  0.0000000062
+    5. ITERATION:     DELTA =  0.0000000002
+
+
+
+ KONVERGENZ FUER K =  11
+
+
+    1. ITERATION:     DELTA =  0.0008825674
+    2. ITERATION:     DELTA =  0.0000111984
+    3. ITERATION:     DELTA =  0.0000001819
+    4. ITERATION:     DELTA =  0.0000000033
+    5. ITERATION:     DELTA =  0.0000000001
+
+
+
+ KONVERGENZ FUER K =  12
+
+
+    1. ITERATION:     DELTA =  0.0007724252
+    2. ITERATION:     DELTA =  0.0000115747
+    3. ITERATION:     DELTA =  0.0000001802
+    4. ITERATION:     DELTA =  0.0000000031
+    5. ITERATION:     DELTA =  0.0000000000
+
+
+
+ KONVERGENZ FUER K =  13
+
+
+    1. ITERATION:     DELTA =  0.0006181945
+    2. ITERATION:     DELTA =  0.0000074690
+    3. ITERATION:     DELTA =  0.0000000868
+    4. ITERATION:     DELTA =  0.0000000012
+    5. ITERATION:     DELTA =  0.0000000000
+
+
+
+ KONVERGENZ FUER K =  14
+
+
+    1. ITERATION:     DELTA =  0.0001005967
+    2. ITERATION:     DELTA =  0.0000009213
+    3. ITERATION:     DELTA =  0.0000000102
+    4. ITERATION:     DELTA =  0.0000000001
+
+
+
+ KONVERGENZ FUER K =  15
+
+
+    1. ITERATION:     DELTA =  0.0000842947
+    2. ITERATION:     DELTA =  0.0000007295
+    3. ITERATION:     DELTA =  0.0000000067
+    4. ITERATION:     DELTA =  0.0000000001
+
+
+
+ KONVERGENZ FUER K =  16
+
+
+    1. ITERATION:     DELTA =  0.0001228348
+    2. ITERATION:     DELTA =  0.0000002832
+    3. ITERATION:     DELTA =  0.0000000008
+
+
+
+ KONVERGENZ FUER K =  17
+
+
+    1. ITERATION:     DELTA =  0.0001144108
+    2. ITERATION:     DELTA =  0.0000002630
+    3. ITERATION:     DELTA =  0.0000000007
+
+
+
+ KONVERGENZ FUER K =  18
+
+
+    1. ITERATION:     DELTA =  0.0001078842
+    2. ITERATION:     DELTA =  0.0000002598
+    3. ITERATION:     DELTA =  0.0000000007
+
+
+
+ KONVERGENZ FUER K =  19
+
+
+    1. ITERATION:     DELTA =  0.0000678622
+    2. ITERATION:     DELTA =  0.0000000115
+    3. ITERATION:     DELTA =  0.0000000000
+1
+ QKL - MATRIX DES A   ZUSTANDES :
+
+
+
+
+
+                      1 A        2 A        3 A        4 A        5 A        6 A        7 A        8 A        9 A       10 A  
+                     11 A       12 A       13 A       14 A       15 A       16 A       17 A       18 A       19 A  
+
+
+         1 A       0.000000
+
+
+         2 A       0.000000   0.000000
+
+
+         3 A       0.000000   0.000000   0.000000
+
+
+         4 A       0.000000   0.000000   0.000000   0.000000
+
+
+         5 A       0.000000   0.000000   0.000000   0.000000   0.000000
+
+
+         6 A      -0.000136  -0.006275  -0.000000   0.006946   0.000000   0.001147
+
+
+         7 A      -0.000000  -0.000000   0.012711   0.000000  -0.000000  -0.000000   0.001208
+
+
+         8 A      -0.000000  -0.000000  -0.005854   0.000000   0.000000   0.000000  -0.001848   0.001318
+
+
+         9 A      -0.000134  -0.003040   0.000000   0.004921   0.000000   0.001725   0.000000  -0.000000   0.001301
+
+
+        10 A      -0.000000  -0.000000  -0.000000   0.000000  -0.016266  -0.000000  -0.000000   0.000000  -0.000000   0.002941
+
+
+
+        11 A      -0.000111  -0.000900   0.000000  -0.012617  -0.000000  -0.001506  -0.000000  -0.000000  -0.001722  -0.000000
+                   0.002246
+
+
+        12 A      -0.000000  -0.000000  -0.007724  -0.000000   0.000000   0.000000  -0.002441   0.002077  -0.000000  -0.000000
+                  -0.000000   0.001567
+
+
+        13 A      -0.000410  -0.006364   0.000000  -0.003558   0.000000   0.001347   0.000000   0.000000   0.001103  -0.000000
+                   0.000485   0.000000   0.001227
+
+
+        14 A      -0.000023  -0.000050  -0.000000   0.000696  -0.000000   0.000591  -0.000000   0.000000   0.000797   0.000000
+                  -0.000662   0.000000   0.000286   0.000239
+
+
+        15 A      -0.000000  -0.000000   0.000336   0.000000   0.000000   0.000000   0.000518  -0.000740   0.000000  -0.000000
+                  -0.000000  -0.000636   0.000000   0.000000   0.000210
+
+
+        16 A      -0.000000   0.000000   0.000000  -0.000000   0.001367  -0.000000   0.000000  -0.000000  -0.000000  -0.001314
+                   0.000000   0.000000   0.000000  -0.000000   0.000000   0.000256
+
+
+        17 A      -0.000009  -0.000012   0.000000  -0.000949  -0.000000  -0.000359  -0.000000  -0.000000  -0.000396   0.000000
+                   0.000943  -0.000000   0.000077  -0.000187  -0.000000  -0.000000   0.000179
+
+
+        18 A      -0.000000  -0.000000  -0.000580  -0.000000   0.000000   0.000000  -0.000506   0.000414  -0.000000   0.000000
+                   0.000000   0.000678  -0.000000   0.000000  -0.000150  -0.000000   0.000000   0.000130
+
+
+        19 A      -0.000196  -0.000054  -0.000000  -0.000021  -0.000000   0.000026   0.000000   0.000000   0.000022   0.000000
+                   0.000028   0.000000   0.000077   0.000003   0.000000   0.000000   0.000007   0.000000   0.000044
+1
+ 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 2P1H 
+
+
+
+
+
+ ZEIT FUER DEN AUFRUF VON "AB3":   ******** SEK.
+
+
+
+ LAENGE DES BUFFERS  NBUF =           1000
+
+ ANZAHL DER BLOECKE  MAXBL =            47
+
+
+
+ DIMENSION DER MATRIX :                            980
+
+ MAXIMALE ANZAHL DER OFF-DIAGONALELEMENTE :     480690
+ ANZAHL DER OFF-DIAGONALELEMENTE :               46997
+ BESETZUNG DER MATRIX IN PROZENT :                9.78
+1
+ ************************************************************************************************************************************
+
+
+
+
+                                     I  N   N  V   V  EEEEE  RRRRR  SSSSS  I  OOOOO  N   N
+                                     I  NN  N  V   V  E      R   R  S      I  O   O  NN  N
+                                     I  N N N  V   V  EEE    RRRRR   SSS   I  O   O  N N N
+                                     I  N  NN   V V   E      R  R       S  I  O   O  N  NN
+                                     I  N   N    V    EEEEE  R   R  SSSSS  I  OOOOO  N   N
+
+
+
+
+ ************************************************************************************************************************************
+
+
+
+ CONVERGENCY CRITERIUM FOR VECTORS IN THE INVERSION:  1.E-09
+ MAXIMUM NUMBER OF ITERATIONS IN THE INVERSION:           30
+
+
+
+
+
+ KONVERGENZ FUER K =   1
+
+
+    1. ITERATION:     DELTA =  0.0000701054
+    2. ITERATION:     DELTA =  0.0000000269
+    3. ITERATION:     DELTA =  0.0000000000
+
+
+
+ KONVERGENZ FUER K =   2
+
+
+    1. ITERATION:     DELTA =  0.0024428372
+    2. ITERATION:     DELTA =  0.0000785713
+    3. ITERATION:     DELTA =  0.0000027557
+    4. ITERATION:     DELTA =  0.0000001037
+    5. ITERATION:     DELTA =  0.0000000042
+    6. ITERATION:     DELTA =  0.0000000002
+
+
+
+ KONVERGENZ FUER K =   3
+
+
+    1. ITERATION:     DELTA =  0.0031482542
+    2. ITERATION:     DELTA =  0.0001211637
+    3. ITERATION:     DELTA =  0.0000055332
+    4. ITERATION:     DELTA =  0.0000002821
+    5. ITERATION:     DELTA =  0.0000000159
+    6. ITERATION:     DELTA =  0.0000000010
+
+
+
+ KONVERGENZ FUER K =   4
+
+
+    1. ITERATION:     DELTA =  0.0032807232
+    2. ITERATION:     DELTA =  0.0001306859
+    3. ITERATION:     DELTA =  0.0000059316
+    4. ITERATION:     DELTA =  0.0000003002
+    5. ITERATION:     DELTA =  0.0000000173
+    6. ITERATION:     DELTA =  0.0000000012
+    7. ITERATION:     DELTA =  0.0000000001
+
+
+
+ KONVERGENZ FUER K =   5
+
+
+    1. ITERATION:     DELTA =  0.0035974818
+    2. ITERATION:     DELTA =  0.0001442037
+    3. ITERATION:     DELTA =  0.0000062711
+    4. ITERATION:     DELTA =  0.0000002790
+    5. ITERATION:     DELTA =  0.0000000125
+    6. ITERATION:     DELTA =  0.0000000006
+1
+ QKL - MATRIX DES A   ZUSTANDES :
+
+
+
+
+
+                      1 A        2 A        3 A        4 A        5 A        6 A        7 A        8 A        9 A       10 A  
+                     11 A       12 A       13 A       14 A       15 A       16 A       17 A       18 A       19 A  
+
+
+         1 A      -0.000090
+
+
+         2 A      -0.000073  -0.002389
+
+
+         3 A      -0.000000  -0.000000  -0.005151
+
+
+         4 A      -0.000023   0.001012   0.000000  -0.004684
+
+
+         5 A       0.000000   0.000000  -0.000000   0.000000  -0.003254
+
+
+         6 A      -0.000105  -0.001856  -0.000000   0.001182   0.000000   0.001147
+
+
+         7 A      -0.000000  -0.000000   0.002751  -0.000000  -0.000000  -0.000000   0.001208
+
+
+         8 A      -0.000000  -0.000000  -0.000407   0.000000   0.000000   0.000000  -0.001848   0.001318
+
+
+         9 A      -0.000103  -0.000862   0.000000   0.002144   0.000000   0.001725   0.000000  -0.000000   0.001301
+
+
+        10 A      -0.000000  -0.000000   0.000000   0.000000  -0.002467  -0.000000  -0.000000   0.000000  -0.000000   0.002941
+
+
+
+        11 A      -0.000097  -0.001700  -0.000000  -0.001156   0.000000  -0.001506  -0.000000  -0.000000  -0.001722  -0.000000
+                   0.002246
+
+
+        12 A      -0.000000  -0.000000   0.001689  -0.000000   0.000000   0.000000  -0.002441   0.002077  -0.000000  -0.000000
+                  -0.000000   0.001567
+
+
+        13 A      -0.000312  -0.000962  -0.000000  -0.003419  -0.000000   0.001347   0.000000   0.000000   0.001103  -0.000000
+                   0.000485   0.000000   0.001227
+
+
+        14 A      -0.000014  -0.000608  -0.000000   0.000306  -0.000000   0.000591  -0.000000   0.000000   0.000797   0.000000
+                  -0.000662   0.000000   0.000286   0.000239
+
+
+        15 A      -0.000000  -0.000000  -0.000166   0.000000   0.000000   0.000000   0.000518  -0.000740   0.000000  -0.000000
+                  -0.000000  -0.000636   0.000000   0.000000   0.000210
+
+
+        16 A      -0.000000  -0.000000  -0.000000   0.000000  -0.002962  -0.000000   0.000000  -0.000000  -0.000000  -0.001314
+                   0.000000   0.000000   0.000000  -0.000000   0.000000   0.000256
+
+
+        17 A      -0.000012  -0.000876  -0.000000   0.003006   0.000000  -0.000359  -0.000000  -0.000000  -0.000396   0.000000
+                   0.000943  -0.000000   0.000077  -0.000187  -0.000000  -0.000000   0.000179
+
+
+        18 A      -0.000000  -0.000000   0.003027   0.000000  -0.000000   0.000000  -0.000506   0.000414  -0.000000   0.000000
+                   0.000000   0.000678  -0.000000   0.000000  -0.000150  -0.000000   0.000000   0.000130
+
+
+        19 A       0.000027   0.000147   0.000000   0.000038  -0.000000   0.000026   0.000000   0.000000   0.000022   0.000000
+                   0.000028   0.000000   0.000077   0.000003   0.000000   0.000000   0.000007   0.000000   0.000044
+
+
+
+
+
+ ***   DIE QKL- MATRIZEN BEFINDEN SICH AUF DER DATEI  qklfile                                         
+1
+ KONSTANTE DIAGRAMME DES A   ZUSTANDES, BERECHNET MIT DER FREIEN EINTEILCHEN-GREENSFUNKTION:
+
+
+
+
+
+                      1 A        2 A        3 A        4 A        5 A        6 A        7 A        8 A        9 A       10 A  
+                     11 A       12 A       13 A       14 A       15 A       16 A       17 A       18 A       19 A  
+
+
+         1 A       0.016495
+
+
+         2 A       0.043495  -0.646792
+
+
+         3 A       0.000000  -0.000000  -1.323398
+
+
+         4 A       0.027285  -0.005450   0.000000  -1.188134
+
+
+         5 A       0.000000  -0.000000   0.000000  -0.000000  -0.880960
+
+
+         6 A       0.013438  -0.001479  -0.000000   0.012246  -0.000000   0.199585
+
+
+         7 A       0.000000  -0.000000   0.018296   0.000000   0.000000  -0.000000   0.231185
+
+
+         8 A       0.000000   0.000000  -0.031913  -0.000000  -0.000000  -0.000000   0.054595   0.170808
+
+
+         9 A       0.011810  -0.011971   0.000000  -0.010626  -0.000000  -0.049427  -0.000000   0.000000   0.184582
+
+
+        10 A       0.000000   0.000000  -0.000000  -0.000000  -0.006676   0.000000   0.000000  -0.000000   0.000000   0.507037
+
+
+
+        11 A       0.019612   0.036333   0.000000  -0.012548  -0.000000   0.028233   0.000000   0.000000   0.033197  -0.000000
+                   0.334974
+
+
+        12 A       0.000000   0.000000  -0.064805  -0.000000   0.000000  -0.000000   0.071990  -0.043932   0.000000   0.000000
+                  -0.000000   0.162469
+
+
+        13 A       0.054796   0.003159   0.000000   0.056649   0.000000  -0.060059  -0.000000  -0.000000  -0.027760   0.000000
+                   0.002485  -0.000000   0.094706
+
+
+        14 A      -0.000675   0.000242  -0.000000  -0.008786  -0.000000  -0.013356   0.000000  -0.000000  -0.056468   0.000000
+                   0.023687  -0.000000  -0.001650  -0.102812
+
+
+        15 A      -0.000000  -0.000000   0.010055  -0.000000   0.000000  -0.000000  -0.017433   0.056957  -0.000000   0.000000
+                   0.000000   0.035250  -0.000000  -0.000000  -0.101094
+
+
+        16 A       0.000000   0.000000   0.000000  -0.000000   0.017219   0.000000  -0.000000   0.000000   0.000000   0.047512
+                  -0.000000  -0.000000   0.000000   0.000000  -0.000000  -0.175596
+
+
+        17 A       0.029357   0.023717   0.000000  -0.021082  -0.000000   0.003896  -0.000000   0.000000   0.003229  -0.000000
+                  -0.041030   0.000000   0.001744   0.010575   0.000000   0.000000  -0.192441
+
+
+        18 A       0.000000   0.000000  -0.042033   0.000000  -0.000000   0.000000   0.004684  -0.002241   0.000000  -0.000000
+                   0.000000  -0.045218   0.000000  -0.000000   0.008078   0.000000  -0.000000  -0.194807
+
+
+        19 A       0.052079   0.021412   0.000000   0.015291  -0.000000   0.009550   0.000000   0.000000   0.007133   0.000000
+                   0.007907   0.000000   0.027624   0.002589   0.000000  -0.000000  -0.008767  -0.000000  -0.026752
+
+
+ ***   DIE KONSTANTEN DIAGRAMME BEFINDEN SICH AUF DER DATEI  sigfile                                         
+
+
+
+
+ Eigenvalue (eV), ps (%), residue
+ ----------------------------------
+
+
+ 1: 12.384604, 95.32, 0.000000
+ Overlaps with main-space configurations:
+    <5|: 0.976322
+
+ 2: 14.498768, 95.97, 0.000000
+ Overlaps with main-space configurations:
+    <4|: 0.979388
+
+ 3: 18.852823, 97.00, 0.000000
+ Overlaps with main-space configurations:
+    <3|:-0.984905
+
+ 11: 34.109801, 53.49, 0.000000
+ Overlaps with main-space configurations:
+    <2|:-0.730156
+
+ 14: 37.359398, 35.60, 0.000000
+ Overlaps with main-space configurations:
+    <2|:-0.595908
+
+ 15: 38.296114, 1.06, 0.000000
+ Overlaps with satellite-space configurations:
+          <5,3,7,II|:-0.656187
+
+ 16: 39.262834, 5.74, 0.000000
+ Overlaps with satellite-space configurations:
+          <4,3,7,II|: 0.630997
+
+ 30: 47.127355, 1.25, 0.000000
+ Overlaps with satellite-space configurations:
+           <4,3,8,I|: 0.769113           <4,3,7,I|: 0.526952
+
+ 57: 60.191877, 1.59, 0.000000
+ Overlaps with satellite-space configurations:
+         <5,3,12,II|: 0.587518
+
+ 59: 60.974029, 1.01, 0.000000
+ Overlaps with satellite-space configurations:
+         <4,3,12,II|:-0.609184
+
+ 99: 86.569961, 1.92, 0.000000
+ Overlaps with satellite-space configurations:
+          <3,2,12,I|:-0.637683
+
+ 213: 544.827676, 83.54, 0.000000
+ Overlaps with main-space configurations:
+    <1|:-0.913975
+
+ 265: 613.273270, 3.80, 0.000000
+ Overlaps with satellite-space configurations:
+         <2,1,11,II|:-0.543462
+
+ 273: 622.805823, 1.37, 0.000000
+ Overlaps with satellite-space configurations:
+           <2,1,9,I|: 0.678569
+
+ 277: 633.438611, 3.58, 0.000000
+ Overlaps with satellite-space configurations:
+         <2,1,13,II|: 0.696301          <2,1,13,I|: 0.560308
+
+ 311: 698.768046, 1.08, 0.000000
+ Overlaps with satellite-space configurations:
+         <3,1,18,II|: 0.888066
+
+ Tasks accomplished.
+#end<theADCcode>
