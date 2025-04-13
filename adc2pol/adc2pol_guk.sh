@@ -30,7 +30,7 @@ active="1 to 13"   # active orbital space
 symgroup="C1"                 # symmetry
 sym_nmbs="1"     # irreps
 
-calc_dir=$PWD/out  # calc directory
+calc_dir=$PWD/out_guk  # calc directory
 
 mkdir -p $calc_dir
 cd $calc_dir
