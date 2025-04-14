@@ -1,0 +1,1728 @@
+Loading mkl/2024.0
+  Loading requirement: tbb/2021.11 compiler-rt/2024.0.2
+#begin<theADCcode>
+  TheADCcode: A collection of ADC/ISR source codes.
+  Contributors: Nikolay Golubev,
+                Yasen Velkov (developer of the original version),
+                Alexander Kuleff,
+                Anthony Dutoi, Nicolas Sisourat, Tsveta Miteva,
+                Joerg Breidbach, Imke Mueller, Nayana Vaval,
+                Francesco Tarantelli, Soeren Kopelke,
+                Sajeev Yesodharan, Kirill Gokhberg, Robin Santra
+
+  SCF data obtained from Gamess UK.
+  m.o.	sym	energy(a.u.)
+  -----------------------------
+  1	1	-1.5185
+  2	1	-1.40954
+  3	1	-1.09306
+  4	1	-0.94478
+  5	1	-0.787382
+  6	1	-0.737524
+  7	1	-0.719865
+  8	1	-0.668603
+  9	1	-0.617403
+  10	1	-0.511685
+  11	1	-0.499918
+  12	1	-0.443357
+  13	1	-0.441361
+  14	1	0.0794975
+  15	1	0.159944
+  16	1	0.211855
+  17	1	0.246203
+  18	1	0.268299
+  19	1	0.306812
+  20	1	0.368231
+  21	1	0.400092
+  22	1	0.417579
+  23	1	0.420666
+  24	1	0.48722
+  25	1	0.514149
+  26	1	0.540615
+  27	1	0.622573
+  28	1	0.649231
+  29	1	0.682809
+  30	1	0.738945
+  31	1	0.806798
+  32	1	0.886763
+  33	1	0.89936
+  34	1	0.960561
+  35	1	1.06827
+  36	1	1.07235
+  37	1	1.08877
+  38	1	1.16529
+  39	1	1.19408
+  40	1	1.2266
+  41	1	1.27266
+  42	1	1.63924
+  43	1	1.89401
+  44	1	2.009
+  45	1	23.598
+  46	1	23.9041
+  47	1	24.1337
+  48	1	43.364
+  49	1	43.4406
+
+ Integral table loaded:
+ type (OO|OO) integrals: 2356 of 4186 found.
+ type (OV|OO) integrals: 23681 of 42588 found.
+ type (OV|OV) integrals: 60919 of 109746 found.
+ type (VV|OO) integrals: 34333 of 60606 found.
+ type (VV|OV) integrals: 175864 of 311688 found.
+ type (VV|VV) integrals: 128122 of 222111 found.
+
+ Input summary:
+ ADC matrix loading from file
+              Symmetries: 1
+                   Spins: 2
+ Static self-energy / density matrix:
+                   Order: Loading from file
+
+                   Tasks: No specified tasks.
+
+ Sigma self energy will be loaded from /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/sig_matrix_dia,/home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/sig_matrix_off file
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/sig_matrix_off has 1 records and buffer size is 100000
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/sig_matrix_dia has dimension 49 and the mainblock size is 0
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/sig_matrix_off has 1 records and buffer size is 100000
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/sig_matrix_dia has dimension 49 and the mainblock size is 0
+
+ Rho self energy will be loaded from /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/rho_matrix_dia,/home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/rho_matrix_off file
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/rho_matrix_off has 1 records and buffer size is 100000
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/rho_matrix_dia has dimension 49 and the mainblock size is 0
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/rho_matrix_off has 1 records and buffer size is 100000
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/rho_matrix_dia has dimension 49 and the mainblock size is 0
+
+ ADC matrix will be loaded from /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/ADC_File_dia.1,/home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/ADC_File_off.1 file
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/ADC_File_off.1 has 30 records and buffer size is 100000
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/ADC_File_dia.1 has dimension 6097 and the mainblock size is 13
+  It seems to be a non-dyson matrix
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/ADC_File_off.1 has 30 records and buffer size is 100000
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/ADC_File_dia.1 has dimension 6097 and the mainblock size is 13
+  It seems to be a non-dyson matrix
+ Parameters of the ADC matrix: 
+ Dimension: 6097
+ Dimension of the main block: 13
+ Loaded symmetry (can be not imported at the moment): -1
+
+
+ amplitudes will be loaded from /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1 file
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_ADC/fmatrix_nd.1
+  contains 13 vectors of dimension 13
+ --------------------------------
+ Charge Migration Analysis Module
+ --------------------------------
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+
+ Wave function will be loaded from /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1 file
+
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 0.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 1.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 2.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 3.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 4.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 5.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 6.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 7.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 8.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.02
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.04
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.06
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.08
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.1
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.12
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.14
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.16
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.18
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.2
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.22
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.24
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.26
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.28
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.3
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.32
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.34
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.36
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.38
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.4
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.42
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.44
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.46
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.48
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.5
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.52
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.54
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.56
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.58
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.6
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.62
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.64
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.66
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.68
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.7
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.72
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.74
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.76
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.78
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.8
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.82
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.84
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.86
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.88
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.9
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.92
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.94
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.96
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 9.98
+  /home/ngolubev/calc/theADCcode_examples/cma/guk/out_prop/prop_vecs.1
+  contains 1002 vectors of dimension 6097
+ Time: 10
+
+  no. of active orbitals: 49
+  no. of active holes:    13
+
+
+Structure of the ADC vectors
+----------------------------
+Number of symmetries: 1
+
+Symmetry 1:
+  Number of 1h         configurations:    13
+  Number of 1p         configurations:    36
+  Number of 2h1p (iir) configurations:   468
+  Number of 2h1p (ijr) configurations:  2808
+  Max. number of ADC-vectors         :  6097
+calculating d11 through second order (main/main-block)
+calculating d12 through first order (main/sat-block)
+calculating d22 through 0th order (sat/sat-block)
+Calculation of the natural charge orbitals...
+Calculating Q(y,t)...
+mu=0
+mu=1
+mu=2
+mu=3
+mu=4
+mu=5
+mu=6
+mu=7
+mu=8
+mu=9
+mu=10
+mu=11
+mu=12
+mu=13
+mu=14
+mu=15
+mu=16
+mu=17
+mu=18
+mu=19
+mu=20
+mu=21
+mu=22
+mu=23
+mu=24
+mu=25
+mu=26
+mu=27
+mu=28
+mu=29
+mu=30
+mu=31
+mu=32
+mu=33
+mu=34
+mu=35
+mu=36
+mu=37
+mu=38
+mu=39
+mu=40
+mu=41
+mu=42
+mu=43
+mu=44
+mu=45
+mu=46
+mu=47
+mu=48
+mu=49
+mu=50
+mu=51
+mu=52
+mu=53
+
+Writing t-dependent orbitals in file torbs
+
+Writing occupation numbers for symmetry 1 in file ofile.01
+
+
+ Tasks accomplished.
+#end<theADCcode>
+Data will be loaded from the following file: /home/ngolubev/calc/theADCcode_examples/cma/guk/out_cma/Q.dat.1
