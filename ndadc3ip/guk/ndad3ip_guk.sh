@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#source ../header_guk6.sh
-source ../header_guk7.sh
-source ../header_theADCcode.sh
+#source ../../header_guk6.sh
+source ../../header_guk7.sh
+source ../../header_theADCcode.sh
 
 title="CO ndADC(3)-IP"
 

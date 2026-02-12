@@ -4,8 +4,8 @@
 # note that a modified version of serenity code is used for these calculations
 # see here: https://github.com/golnik/serenity, branch data_saver
 
-source ../header_serenity.sh
-source ../header_theADCcode.sh
+source ../../header_serenity.sh
+source ../../header_theADCcode.sh
 
 # note that ADC-IP can only compute doublets, so the spin keyword is inactive
 spin="2" #spin
